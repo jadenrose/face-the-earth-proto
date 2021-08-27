@@ -1,19 +1,3 @@
 # face-the-earth
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## git/jadenrose/face-the-earth
+This is the Vue app (SPA) that I'm developing for my brother's band, Face the Earth.
