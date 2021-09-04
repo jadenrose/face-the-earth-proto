@@ -1,0 +1,29 @@
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.hero:after {
+  position: absolute;
+  content: '';
+  background: url("../../assets/img/band-photo.png");
+  background-size: cover;
+  background-position: center;
+  -webkit-filter: blur(1px) saturate(50%);
+          filter: blur(1px) saturate(50%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  z-index: -1;
+}
+/*# sourceMappingURL=home.css.map */

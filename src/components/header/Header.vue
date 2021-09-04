@@ -27,9 +27,9 @@
 </template>
 
 <script>
-import getLinks from '../composables/getLinks'
-import Logo from './subs/Logo.vue'
-import Hamburger from './subs/Hamburger.vue'
+import getLinks from '../../composables/getLinks'
+import Logo from '../elements/logo/Logo.vue'
+import Hamburger from '../elements/hamburger/Hamburger.vue'
 
 export default {
 	name: 'Header',

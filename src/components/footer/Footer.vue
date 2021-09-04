@@ -7,8 +7,8 @@
 </template>
 
 <script>
-import getLinks from '../composables/getLinks'
-import Logo from './subs/Logo.vue'
+import getLinks from '../../composables/getLinks'
+import Logo from '../elements/logo/Logo.vue'
 
 export default {
 	name: 'Header',

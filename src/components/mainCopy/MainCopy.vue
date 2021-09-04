@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import CTA from './subs/CTA.vue'
+import CTA from '../elements/cta/CTA.vue'
 
 export default {
 	name: 'About',
