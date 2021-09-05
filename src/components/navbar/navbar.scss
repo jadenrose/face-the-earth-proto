@@ -1,0 +1,23 @@
+@import '../../scss/variables';
+@import '../../scss/mixins';
+
+.navbar {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navlist {
+        order: 0;
+    }
+
+    .social-links {
+        order: 1;
+    }
+
+    .hamburger {
+        order: 2;
+        margin-left: 3em;
+    }
+}

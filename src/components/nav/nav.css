@@ -1,0 +1,141 @@
+/*
+==========
+variables
+==========
+*/
+/* colors */
+/* typography */
+/* layout */
+/* media */
+/*
+==========
+mixins
+==========
+*/
+/* media */
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 2em;
+}
+
+.nav .navlink {
+  text-decoration: none;
+  font-weight: 900;
+  letter-spacing: 1px;
+  padding: 2em calc(2em * 0.65);
+}
+
+.nav .navlink.router-link-exact-active {
+  cursor: default;
+  opacity: 0.5;
+}
+
+.nav .navlink.router-link-exact-active:hover {
+  color: inherit;
+}
+
+.nav a {
+  display: block;
+}
+
+.nav a:hover {
+  color: #6ED1FD;
+}
+
+.nav a:active {
+  color: inherit;
+}
+
+.nav .social-list-item a {
+  font-size: 2rem;
+  padding: 0.5em;
+}
+
+.nav .social-list-item:last-child a {
+  padding-right: 0;
+}
+
+.mobile-nav {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  place-content: center;
+  font-size: 2rem;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100%;
+  background: #1a1f22;
+  z-index: 999;
+}
+
+.mobile-nav .container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mobile-nav a {
+  text-decoration: none;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+}
+
+.mobile-nav a:hover {
+  color: #6ED1FD;
+}
+
+.mobile-nav .navlist {
+  margin-bottom: 2em;
+}
+
+.mobile-nav .navlist li {
+  margin-bottom: 2em;
+}
+
+.mobile-nav .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mobile-nav .social-links a {
+  padding: 0.5em;
+}
+
+.mobile-nav .close-btn {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  width: 2em;
+  height: 2em;
+}
+
+.mobile-nav .close-btn:hover {
+  color: #6ED1FD;
+}
+/*# sourceMappingURL=nav.css.map */

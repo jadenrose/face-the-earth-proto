@@ -1,16 +1,18 @@
 <template>
     <Header v-if="notHome" />
-	
+
     <router-view />
 
     <Footer />
 </template>
 
 <script>
+import { provide, computed } from 'vue'
+import { useRoute } from 'vue-router'
+
+import store from '../store/store'
 import Header from '../components/header/Header.vue'
 import Footer from '../components/footer/Footer.vue'
-import { computed } from '@vue/reactivity'
-import { useRoute } from 'vue-router'
 
 export default {
     components: {
@@ -18,8 +20,9 @@ export default {
         Footer
     },
     setup () {
-        const route = useRoute()
+        provide('store', store)
 
+        const route = useRoute()
         const notHome = computed(() => route.name !== 'Home')
 
         return {
@@ -31,5 +34,5 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../assets/styles/global.css";
+@import "./app.css";
 </style>

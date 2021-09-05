@@ -1,12 +1,12 @@
 <template>
     <svg
-        @click="openMobileMenu"
-        class="hamburger"
+        @click="closeMobileMenu"
+        class="close-btn"
         id="mobile-menu-open"
         alt="open navigation menu"
         aria-label="open navigation menu"
     >
-        <use href="@/../public/assets/img/menu.svg#img" />
+        <use href="@/../public/assets/img/x.svg#img" />
     </svg>
 </template>
 
@@ -14,22 +14,17 @@
 import { inject } from 'vue'
 
 export default {
-    name: 'Hamburger',
+    name: 'CloseBtn',
     setup () {
         const store = inject('store')
 
-        const openMobileMenu = () => {
-            store.setShowMobileNav(true)
+        const closeMobileMenu = () => {
+            store.setShowMobileNav(false)
         }
 
         return {
-            openMobileMenu,
+            closeMobileMenu,
         }
     }
-
 }
 </script>
-
-<style>
-@import "./hamburger.css";
-</style>

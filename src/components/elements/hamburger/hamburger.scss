@@ -1,0 +1,18 @@
+@import '../../../scss/variables';
+@import '../../../scss/mixins';
+
+.hamburger {
+    width: 3.2em;
+    height: 3.2em;
+    padding: 0.3em;
+
+    object-fit: cover;
+
+    cursor: pointer;
+
+    align-self: center;
+
+    &:hover {
+        color: $accent-main;
+    }
+}

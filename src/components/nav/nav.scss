@@ -1,0 +1,111 @@
+@import '../../scss/variables';
+@import '../../scss/mixins';
+
+.nav {
+    display: flex;
+
+    ul {
+        display: flex;
+        align-items: center;
+        margin-left: 2em;
+    }
+
+    .navlink {
+        text-decoration: none;
+        font-weight: 900;
+        letter-spacing: 1px;
+        padding: $spacing-small calc(#{$spacing-small} * 0.65);
+
+        &.router-link-exact-active {
+            cursor: default;
+            opacity: 0.5;
+
+            &:hover {
+                color: inherit;
+            }
+        }
+    }
+
+    a {
+        display: block;
+
+        &:hover {
+            color: $accent-main;
+        }
+
+        &:active {
+            color: inherit;
+        }
+    }
+
+    .social-list-item {
+        a {
+            font-size: 2rem;
+            padding: 0.5em;
+        }
+
+        &:last-child a {
+            padding-right: 0;
+        }
+    }
+}
+
+.mobile-nav {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    font-size: 2rem;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    background: $background;
+    z-index: 999;
+
+    .container {
+        flex-direction: column;
+    }
+
+    a {
+        text-decoration: none;
+        font-weight: $bold;
+        letter-spacing: 0.05em;
+
+        &:hover {
+            color: $accent-main;
+        }
+    }
+
+    .navlist {
+        margin-bottom: $spacing-small;
+
+        li {
+            margin-bottom: 2em;
+        }
+    }
+
+    .social-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        a {
+            padding: 0.5em;
+        }
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 1em;
+        left: 1em;
+        width: 2em;
+        height: 2em;
+
+        &:hover {
+            color: $accent-main;
+        }
+    }
+}

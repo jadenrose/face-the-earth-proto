@@ -1,35 +1,33 @@
 <template>
-  <section class="hero">
-	  <Header />
-	  <div class="container pv-big">
-			<HeroText />
+    <section class="hero">
+        <Header />
+        <main class="container pv-big">
+            <HeroText />
 
-			<CTA text="check out our music" />
-	  </div>
-  </section>
+            <CTA text="check out our music" />
+        </main>
+    </section>
 
-  <MainCopy />
+    <About />
 </template>
 
 <script>
-import Header from '../../components/header/Header.vue'
-import CTA from '../../components/elements/cta/CTA.vue'
-import MainCopy from '../../components/mainCopy/MainCopy.vue'
-import HeroText from '../../components/elements/heroText/HeroText.vue'
+import Header from '../../components/header/Header'
+import CTA from '../../components/elements/cta/CTA'
+import HeroText from '../../components/elements/heroText/HeroText'
+import About from '../../components/about/About'
 
 export default {
-  name: 'Home',
-  components: {
-	  Header,
-	  CTA,
-	  MainCopy,
-	  HeroText
-  }
+    name: 'Home',
+    components: {
+        Header,
+        CTA,
+        HeroText,
+        About
+    }
 }
 </script>
 
 <style>
-
-@import './home.css';
-
+@import "./home.css";
 </style>

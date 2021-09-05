@@ -1,0 +1,47 @@
+/*
+==========
+variables
+==========
+*/
+/* colors */
+/* typography */
+/* layout */
+/* media */
+/*
+==========
+mixins
+==========
+*/
+/* media */
+.cta {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  background: #6ED1FD;
+  color: #1a1f22;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding: 2em;
+  -webkit-transform: var(--random-rotation);
+          transform: var(--random-rotation);
+  -webkit-clip-path: var(--random-clip-path);
+          clip-path: var(--random-clip-path);
+}
+
+.cta:hover, .cta:focus {
+  background: #57a1c0;
+}
+
+.cta:active {
+  background: #6ED1FD;
+}
+
+.cta span {
+  display: block;
+  -webkit-transform: var(--random-rotation-reverse);
+          transform: var(--random-rotation-reverse);
+}
+/*# sourceMappingURL=cta.css.map */

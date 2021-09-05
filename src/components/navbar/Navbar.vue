@@ -1,22 +1,25 @@
 <template>
-    <footer class="pv-med">
+    <div class="navbar pv-small">
         <div class="container">
             <Logo />
+            <Nav />
         </div>
-    </footer>
+    </div>
 </template>
 
 <script>
 import Logo from '../elements/logo/Logo.vue'
+import Nav from '../nav/Nav.vue'
 
 export default {
-    name: 'Header',
+    name: 'Navbar',
     components: {
-        Logo
+        Logo,
+        Nav,
     }
 }
 </script>
 
 <style>
-@import "./footer.css";
+@import "./navbar.css";
 </style>

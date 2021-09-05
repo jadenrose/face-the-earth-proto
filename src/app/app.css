@@ -15,7 +15,7 @@ mixins
 /* media */
 /*
 ===============
-general styles
+resets
 ===============
 */
 html,
@@ -31,22 +31,43 @@ body {
           box-sizing: border-box;
 }
 
+img {
+  display: block;
+  min-width: 0;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+}
+
 /*
 ============
 typography
 ============
 */
 html {
-  font-size: 12px;
+  font-size: 16px;
 }
 
 @media (min-width: 900px) {
-  html {
-    font-size: 14px;
-  }
-}
-
-@media (min-width: 1200px) {
   html {
     font-size: 18px;
   }
@@ -79,6 +100,7 @@ p {
   letter-spacing: 1px;
   margin-top: 0;
   margin-bottom: 2em;
+  max-width: 40em;
 }
 
 /*
@@ -115,6 +137,11 @@ layout styles
   padding-top: 10em;
 }
 
+.pv-small {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
 .pv-med {
   padding-top: 5em;
   padding-bottom: 5em;
@@ -124,4 +151,4 @@ layout styles
   padding-top: 10em;
   padding-bottom: 10em;
 }
-/*# sourceMappingURL=global.css.map */
+/*# sourceMappingURL=app.css.map */

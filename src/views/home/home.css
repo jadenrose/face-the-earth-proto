@@ -14,7 +14,7 @@
 .hero:after {
   position: absolute;
   content: '';
-  background: url("../../assets/img/band-photo.png");
+  background: url("../../../public/assets/img/band-photo.png");
   background-size: cover;
   background-position: center;
   -webkit-filter: blur(1px) saturate(50%);

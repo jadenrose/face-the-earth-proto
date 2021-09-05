@@ -1,0 +1,31 @@
+@import '../../../scss/variables';
+@import '../../../scss/mixins';
+
+.cta {
+    appearance: none;
+    border: none;
+    background: $accent-main;
+    color: $background;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: $bold;
+    text-transform: uppercase;
+    padding: 2em;
+
+    &:hover,
+    &:focus {
+        background: $accent-hover;
+    }
+
+    &:active {
+        background: $accent-main;
+    }
+
+    transform: var(--random-rotation);
+    clip-path: var(--random-clip-path);
+
+    span {
+        display: block;
+        transform: var(--random-rotation-reverse);
+    }
+}
