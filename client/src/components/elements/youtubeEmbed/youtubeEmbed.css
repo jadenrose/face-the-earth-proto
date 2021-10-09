@@ -1,0 +1,19 @@
+.YoutubeEmbed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.YoutubeEmbed iframe {
+  width: 560px;
+  height: 315px;
+  display: block;
+  border-radius: 6px;
+  -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+/*# sourceMappingURL=youtubeEmbed.css.map */

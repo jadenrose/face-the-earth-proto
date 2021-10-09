@@ -134,3 +134,7 @@ layout styles
     padding-top: $spacing-big;
     padding-bottom: $spacing-big;
 }
+
+main {
+    min-height: 100vh;
+}

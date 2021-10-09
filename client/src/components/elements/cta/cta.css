@@ -13,6 +13,14 @@ mixins
 ==========
 */
 /* media */
+.cta-container {
+  cursor: pointer;
+}
+
+.cta-container * {
+  cursor: pointer;
+}
+
 .cta {
   -webkit-appearance: none;
      -moz-appearance: none;

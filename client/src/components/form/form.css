@@ -1,0 +1,135 @@
+/*
+==========
+variables
+==========
+*/
+/* colors */
+/* typography */
+/* layout */
+/* media */
+/*
+==========
+mixins
+==========
+*/
+/* media */
+label,
+input,
+select {
+  display: block;
+  width: 100%;
+}
+
+label {
+  letter-spacing: 1px;
+  font-weight: 900;
+  cursor: pointer;
+  text-align: left;
+}
+
+.Form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2em;
+}
+
+.FormSection {
+  margin-bottom: 5em;
+  width: 100%;
+}
+
+.FormGroup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  cursor: pointer;
+  width: 100%;
+}
+
+@media (min-width: 900px) {
+  .FormGroup {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.FormGroup .FormControl {
+  margin-bottom: 5em;
+}
+
+.FormGroup:last-child {
+  margin-bottom: 0;
+}
+
+.FormGroup .cta-container {
+  display: block;
+  width: 70%;
+  margin: auto;
+}
+
+.FormGroup .cta {
+  display: block;
+  width: 100%;
+}
+
+.FormControl {
+  margin-right: 1em;
+}
+
+.FormControl:last-child {
+  margin-right: 0;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+select {
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 1.25em 1em;
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #1a1f22;
+  letter-spacing: 1px;
+  background-color: #e7f8ff;
+}
+
+input[type='text']:focus,
+input[type='email']:focus,
+input[type='tel']:focus,
+select:focus {
+  -webkit-box-shadow: 0 0 1px 3px #6ED1FD inset;
+          box-shadow: 0 0 1px 3px #6ED1FD inset;
+}
+
+select {
+  cursor: pointer;
+  background-image: url("../../../public/assets/img/select.svg");
+  background-repeat: no-repeat;
+  background-position-x: 95%;
+  background-position-y: 50%;
+  background-size: 1.5em;
+}
+/*# sourceMappingURL=form.css.map */

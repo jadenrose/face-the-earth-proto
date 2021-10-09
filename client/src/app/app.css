@@ -151,4 +151,8 @@ layout styles
   padding-top: 10em;
   padding-bottom: 10em;
 }
+
+main {
+  min-height: 100vh;
+}
 /*# sourceMappingURL=app.css.map */

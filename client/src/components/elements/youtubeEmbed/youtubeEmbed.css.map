@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,aAAa,CAAC;EACV,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;CAU1B;;AAZD,AAII,aAJS,CAIT,MAAM,CAAC;EACH,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,OAAO,EAAE,KAAK;EACd,aAAa,EAAE,GAAG;EAClB,UAAU,EAAE,GAAG,CAAC,GAAG,CAAC,GAAG,CAAM,kBAAK;EAClC,OAAO,EAAE,CAAC;CACb",
+    "sources": [
+        "youtubeEmbed.scss"
+    ],
+    "names": [],
+    "file": "youtubeEmbed.css"
+}

@@ -1,0 +1,27 @@
+@import '../../scss/variables';
+@import '../../scss/mixins';
+
+.Typography {
+    display: block;
+    margin-bottom: 1em;
+    letter-spacing: 1px;
+
+    &.h1 {
+        font-size: 1.875rem;
+        font-weight: $bold;
+    }
+
+    &.h2 {
+        font-size: 1.625rem;
+        font-weight: $bold;
+    }
+
+    &.subtitle {
+        font-size: 1.1rem;
+        font-weight: $bold;
+    }
+
+    &.text-center {
+        text-align: center;
+    }
+}

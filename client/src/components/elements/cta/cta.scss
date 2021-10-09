@@ -1,6 +1,14 @@
 @import '../../../scss/variables';
 @import '../../../scss/mixins';
 
+.cta-container {
+    cursor: pointer;
+
+    * {
+        cursor: pointer;
+    }
+}
+
 .cta {
     appearance: none;
     border: none;

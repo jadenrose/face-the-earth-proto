@@ -1,12 +1,17 @@
 <template>
-    <main class="watch container">
-        <h2>watch</h2>
+    <main class="Watch container">
+        <YoutubeEmbed videoId="RNi2PqkGY9g" />
     </main>
 </template>
 
 <script>
-export default {
+import YoutubeEmbed from '../../components/elements/youtubeEmbed/YoutubeEmbed.vue'
 
+export default {
+    name: 'Watch',
+    components: {
+        YoutubeEmbed,
+    }
 }
 </script>
 
